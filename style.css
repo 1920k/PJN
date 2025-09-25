@@ -1,0 +1,180 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #121212; /* fundo preto escuro */
+  color: #ffffff; /* texto branco */
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Container principal */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px;
+}
+
+/* Título */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+/* Área de adicionar nomes */
+.adicionar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.adicionar select,
+.adicionar input {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background: #1e1e1e;
+  color: #fff;
+  font-size: 14px;
+}
+
+.adicionar button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+  background-color: #333;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.adicionar button:hover {
+  background-color: #555;
+}
+
+/* Botões de ação (WhatsApp / Print) */
+.botoes-acoes {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.botoes-acoes button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #333;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.botoes-acoes button:hover {
+  background-color: #555;
+}
+
+/* Escala */
+.escala {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Card do dia */
+.dia {
+  background: #1e1e1e; /* card preto escuro */
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
+  min-width: 250px;
+  flex: 1 1 250px;
+  transition: transform 0.2s;
+}
+
+.dia:hover {
+  transform: translateY(-5px);
+}
+
+/* Horário */
+.horario {
+  margin-top: 10px;
+  padding: 10px;
+  background: #2c2c2c;
+  border-radius: 8px;
+}
+
+/* Cargo */
+.cargo {
+  margin-top: 8px;
+  background: #333;
+  padding: 8px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.cargo:hover {
+  background: #444;
+}
+
+/* Lista de nomes */
+.cargo ul {
+  list-style-type: none;
+  margin-top: 5px;
+}
+
+.cargo li {
+  padding: 4px 6px;
+  background: #222;
+  border-radius: 4px;
+  margin-bottom: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: grab;
+  transition: background 0.3s;
+}
+
+.cargo li:hover {
+  background: #333;
+}
+
+.cargo li button {
+  border: none;
+  background: #b71c1c; /* vermelho escuro */
+  color: white;
+  border-radius: 4px;
+  padding: 2px 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cargo li button:hover {
+  background: #f44336; /* vermelho mais vivo no hover */
+}
+
+/* Títulos de horários e cargos */
+h2 {
+  color: #ffffff;
+}
+
+h3 {
+  color: #ddd;
+}
+
+h4 {
+  color: #bbb;
+  font-size: 15px;
+}
